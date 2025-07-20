@@ -1,0 +1,99 @@
+
+@use '../utilidades/variables' as v;
+@use '../utilidades/mixin';
+
+
+body {
+  background-color: v.$color-fondo;
+  color: v.$color-texto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+
+  @include mixin.respond-to(tablet) {
+    padding: 30px;
+  }
+  @include mixin.respond-to(desktop) {
+    padding: 40px;
+    font-size: 18px;
+  }
+}
+
+.top {
+    text-align: center;
+    margin-top: 2rem;
+    color: v.$color-secundario;;
+    line-height: 1.6;
+  }
+
+  .linea-roja {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(155, 7, 7);
+    margin: 0 auto;
+  }
+  
+.titulos {
+  color:yellow
+}
+.titulo {
+  font-family: 'Creepster', cursive;
+  font-size: 3rem;
+  color: v.$color-secundario;
+  text-shadow: 2px 2px 8px #000;
+  text-align: center;
+  padding: 1rem 0;
+
+  @include mixin.respond-to(tablet) {
+    font-size: 4rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  @include mixin.respond-to(desktop) {
+    font-size: 4.5rem;
+  }
+}
+
+h3, h4 {
+  color: v.$color-texto-secundario;
+  margin-bottom: 17px;
+  text-align: center;
+  font-size: 1.25rem;
+
+  @include mixin.respond-to(tablet) {
+    font-size: 1.5rem;
+  }
+}
+
+.parrafoI, .intro-terror {
+  color: rgb(155, 7, 7);
+  text-align: center;
+  font-family: cursive;
+  max-width: 90%;
+  margin: 1rem auto;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px black;
+  letter-spacing: 1px;
+  line-height: 1.6;
+
+  @include mixin.respond-to(tablet) {
+    font-size: 1.2rem;
+    max-width: 70%;
+    margin: 1.5rem auto;
+  }
+}
+
+.img-destacada {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+   
+.Cortometrajes {
+    text-align: center;
+    margin-top: 2rem;
+    color: v.$color-secundario;
+    
+  }
+  

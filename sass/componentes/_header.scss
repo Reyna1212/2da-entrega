@@ -1,0 +1,36 @@
+@use '../utilidades/mixins' as mix;
+@use '../utilidades/variables' as vars;
+
+header {
+  @include mix.flex-center(row, center, center);
+  padding: 20px;
+
+  h1 {
+    font-size: 2rem;
+    color: vars.$color-primario;
+    &:hover {
+      color: vars.$color-hover;
+    }
+  }
+
+  nav {
+    margin-left: auto;
+
+    ul {
+      @include mix.flex-center();
+      list-style: none;
+      gap: 20px;
+
+      li {
+        a {
+          color: vars.$color-nav-link;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

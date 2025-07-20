@@ -1,0 +1,10 @@
+@use 'utilidades/variables';
+@use 'utilidades/mixin';
+
+@import 'base/reset';
+@import 'base/base';
+
+@import 'componentes/nav';
+@import 'componentes/peliculas';
+@import 'componentes/cortometrajes';
+@import 'componentes/footer';

@@ -1,0 +1,12 @@
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+  
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+  
